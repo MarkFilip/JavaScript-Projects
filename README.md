@@ -1,5 +1,5 @@
 # JavaScript Projects
-These are some projects I made using JavaScript.
+These are some small projects I made using JavaScript.
 
 ## Projects
 * [Pizza Menu](#pizza-menu)
