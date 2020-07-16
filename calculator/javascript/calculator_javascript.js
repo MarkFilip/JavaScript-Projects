@@ -56,9 +56,10 @@ function Handle_Operator(Next_Operator) {
         //if operator already exists, property lookup is performed for the operator
         // in the Perform_Calculation object and the function that matches the
         // operator is executed
-        const result = Perform_Calculation[operator](Value_Now, Value_of_Input);
-
-        Calculator.Display_Value = String(result);
+        let result = Perform_Calculation[operator](Value_Now, Value_of_Input);
+        result = Number(result).toFixed(9)
+        result = (result *1).toString()
+        Calculator.Display_Value = result;
         Calculator.First_Operand = result;
     }
 
